@@ -35,3 +35,21 @@ button {
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
 }
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.red {
+  color: red;
+  order: 1;
+}
+.yellow {
+  color: goldenrod;
+  order: 2;
+}
+.green {
+  color: green;
+  order: 3;
+}

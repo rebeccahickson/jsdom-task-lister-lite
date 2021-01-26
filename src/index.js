@@ -8,9 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function addItemToList() {
     input = document.getElementById("new-task-description").value;
+    color = document.getElementById("priority-selector").value;
+    length = document.getElementById("new-task-duration").value;
     document.getElementById(
       "tasks"
-    ).innerHTML += `<li>${input} <button id="button-for-${input}">X</button></li>`;
+    ).innerHTML += `<li class="${color}">${input} - Approximately ${length} hours<button id="button-for-${input}">X</button></li>`;
 
     addDeleteButton(input);
   }
